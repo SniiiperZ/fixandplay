@@ -33,7 +33,7 @@ body
     left: -50%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg,transparent,#08FBD2,#08FBD2);
+    background: linear-gradient(0deg,transparent,#B632FF,#0081FE,#96FF00,#FF00D8,#FFB200);
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
 }
@@ -45,7 +45,7 @@ body
     left: -50%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg,transparent,#08FBD2,#08FBD2);
+    background: linear-gradient(0deg,transparent,#B632FF,#0081FE,#96FF00,#FF00D8,#FFB200);
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
     animation-delay: -3s;
