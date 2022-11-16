@@ -33,7 +33,7 @@ body
     left: -50%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg,transparent,#FF00F5,#FF00F5);
+    background: linear-gradient(0deg,transparent,#08FBD2,#08FBD2);
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
 }
@@ -45,7 +45,7 @@ body
     left: -50%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg,transparent,#FF00F5,#FF00F5);
+    background: linear-gradient(0deg,transparent,#08FBD2,#08FBD2);
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
     animation-delay: -3s;
@@ -74,7 +74,7 @@ body
 }
 .form h2
 {
-    color: #FF00F5;
+    color: #08FBD2;
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.1em;
@@ -112,7 +112,7 @@ body
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span
 {
-    color: #FF00F5;
+    color: #08FBD2;
     transform: translateX(0px)translateY(-34px);
     font-size: 0.75em;
 }
@@ -123,7 +123,7 @@ body
     bottom: 0;
     width: 100%;
     height: 2px;
-    background: #FF00F5;
+    background: #08FBD2;
     border-radius: 4px;
     transition: 0.5s;
     pointer-events: none;
@@ -149,13 +149,13 @@ body
 .links a:hover,
 .links a:nth-child(2)
 {
-    color: #FF00F5;
+    color: #08FBD2;
 }
 input[type="submit"]
 {
     border: none;
     outline: none;
-    background: #FF00F5;
+    background: #08FBD2;
     padding: 11px 25px;
     width: 140px;
     margin-top: 10px;
@@ -176,5 +176,5 @@ input[type="submit"]:active
 }
 .home:active
 {
-    color: #FF00F5;
+    color: #08FBD2;
 }
