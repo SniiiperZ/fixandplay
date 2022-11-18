@@ -61,6 +61,12 @@ body
         transform: rotate(360deg);
     }
 }
+@font-face
+{
+    font-family: NextGames;
+    src: url("font/NEXTG___.TTF");
+    font-weight: bold;
+}
 .form
 {
     position: absolute;
