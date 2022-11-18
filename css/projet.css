@@ -153,10 +153,10 @@ main
 .loader
 {
     position: relative;
-    width: 300px;
+    width: 100%;
     height: 10px;
     background: #fff;
-    ~webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 .loader::before
 {
