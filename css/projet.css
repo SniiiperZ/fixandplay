@@ -222,10 +222,6 @@ main
     font-weight: bold;
 }
 @media (max-width: 800px){
-    body
-    {
-        font-size: 1.7em;
-    }
     .logo
     {
         width: 600px;
