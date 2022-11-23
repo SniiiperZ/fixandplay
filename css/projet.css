@@ -217,8 +217,8 @@ main
 }
 @font-face
 {
-    font-family: NextGames;
-    src: url("font/NEXTG___.TTF");
+    font-family: Gameplay;
+    src: url("font/Gameplay.TTF");
     font-weight: bold;
 }
 @media (max-width: 800px){
