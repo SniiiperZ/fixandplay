@@ -470,6 +470,13 @@ header .search
     {
         color: black;
     }
+    .cards
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
     .hide
     {
         display: none;
