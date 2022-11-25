@@ -16,14 +16,64 @@ body
     background: #191B21;
     flex-direction: column;
 }
-.box
+main
+{
+    
+}
+.container
 {
     position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bubbles
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-top: 0px;
+}
+.bubbles span
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #08FBD2;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #08FBD244, 0 0 50px #08FBD2, 0 0 100px #08FBD2;
+    animation: animate2 15s linear infinite;
+    animation-duration: calc(150s / var(--i))
+}
+.bubbles span:nth-child(even)
+{
+    background: #FF00D8;
+    box-shadow: 0 0 0 10px #FF00D844, 0 0 50px #FF00D8, 0 0 100px #FF00D8;
+}
+@keyframes animate2
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-100vh) scale(1);
+    }
+}
+.box
+{
+    position: absolute;
     width: 380px;
     height: 420px;
     background: #1c1c1c;
     border-radius: 8px;
     overflow: hidden;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .box::before
 {
@@ -183,9 +233,4 @@ input[type="submit"]:active
 .home:active
 {
     color: #08FBD2;
-}
-@media (max-width: 800px){
-    {
-        min-height: 100vh;
-    }
 }
