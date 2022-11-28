@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Gameplay;
+    font-family: Revamped;
 }
 body
 {
@@ -217,8 +217,8 @@ main
 }
 @font-face
 {
-    font-family: Gameplay;
-    src: url("font/Gameplay.TTF");
+    font-family: Revamped;
+    src: url("font/Revamped.otf");
     font-weight: bold;
 }
 @media (max-width: 800px){
