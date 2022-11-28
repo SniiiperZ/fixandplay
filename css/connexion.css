@@ -5,8 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: NextGames;
-}
+    font-family: Revamped;}
 body
 {
     display: flex;
@@ -113,8 +112,8 @@ main
 }
 @font-face
 {
-    font-family: NextGames;
-    src: url("font/NEXTG___.TTF");
+    font-family: Revamped;
+    src: url("font/Revamped.otf");
     font-weight: bold;
 }
 .form
@@ -233,4 +232,10 @@ input[type="submit"]:active
 .home:active
 {
     color: #08FBD2;
+}
+@media (max-width: 800px){
+    body
+    {
+        min-height: 100vh;
+    }
 }
