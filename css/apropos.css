@@ -475,7 +475,7 @@ header .search
         flex-direction: column;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        gap: 60px;
     }
     .hide
     {
