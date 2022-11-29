@@ -236,6 +236,6 @@ input[type="submit"]:active
 @media (max-width: 800px){
     body
     {
-        min-height: 100vh;
+        min-height: 50vh;
     }
 }
