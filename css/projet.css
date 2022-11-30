@@ -218,8 +218,7 @@ main
 @font-face
 {
     font-family: Revamped;
-    src: url("font/Revamped.otf");
-    font-weight: bold;
+    src: url("../font/Revamped.woff");
 }
 @media (max-width: 800px){
     .logo
