@@ -334,42 +334,6 @@ main
     grid-gap: 20px;
     margin-top: 20px;
 }
-.contact::before
-{
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 380px;
-    height: 420px;
-    background: linear-gradient(0deg,transparent,#B632FF,#0081FE,#96FF00,#FF00D8,#FFB200);
-    transform-origin: bottom right;
-    animation: animate 6s linear infinite;
-}
-.contact::after
-{
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 380px;
-    height: 420px;
-    background: linear-gradient(0deg,transparent,#B632FF,#0081FE,#96FF00,#FF00D8,#FFB200);
-    transform-origin: bottom right;
-    animation: animate 6s linear infinite;
-    animation-delay: -3s;
-}
-@keyframes animate
-{
-    0%
-    {
-        transform: rotate(0deg);
-    }
-    100%
-    {
-        transform: rotate(360deg);
-    }
-}
 .contact h3
 {
     color: white;
@@ -491,8 +455,7 @@ main
 @font-face
 {
     font-family: Revamped;
-    src: url("font/Revamped.otf");
-    font-weight: bold;
+    src: url("../font/Revamped.woff");
 }
 /* responsive design*/
 @media (max-width: 991px){
