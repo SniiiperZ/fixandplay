@@ -43,12 +43,22 @@ main
     border-radius: 50%;
     box-shadow: 0 0 0 10px #08FBD244, 0 0 50px #08FBD2, 0 0 100px #08FBD2;
     animation: animate2 15s linear infinite;
-    animation-duration: calc(150s / var(--i))
+    animation-duration: calc(500s / var(--i))
 }
-.bubbles span:nth-child(even)
+.bubbles .bulle1
 {
     background: #FF00D8;
     box-shadow: 0 0 0 10px #FF00D844, 0 0 50px #FF00D8, 0 0 100px #FF00D8;
+}
+.bubbles .bulle2
+{
+    background: #08FBD2;
+    box-shadow: 0 0 0 10px #08FBD244, 0 0 50px #08FBD2, 0 0 100px #08FBD2;
+}
+.bubbles .bulle3
+{
+    background: #00F705;
+    box-shadow: 0 0 0 10px #00F70544, 0 0 50px #00F705, 0 0 100px #00F705;
 }
 @keyframes animate2
 {
@@ -113,8 +123,7 @@ main
 @font-face
 {
     font-family: Revamped;
-    src: url("font/Revamped.otf");
-    font-weight: bold;
+    src: url("../font/Revamped.woff");
 }
 .form
 {
@@ -236,6 +245,11 @@ input[type="submit"]:active
 @media (max-width: 800px){
     body
     {
-        min-height: 50vh;
+        min-height: 100vh;
+        
+    }
+    .bubbles
+    {
+        display: none;
     }
 }
