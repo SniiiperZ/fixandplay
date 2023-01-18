@@ -1,0 +1,496 @@
+@charset "utf-8";
+/* CSS Document */
+.loader
+{
+    margin-top: 180px;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+.loader::before
+{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, red, blue, green, yellow,red, blue, green, yellow, red);
+    animation: animate 30s linear infinite;
+    background-size: 500%;
+}
+.loader::after
+{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, red, blue, green, yellow,red, blue, green, yellow, red);
+    animation: animate 30s linear infinite;
+    background-size: 500%;
+    filter: blur(20px);
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    0%
+    {
+        background-position: 500% 0;
+    }
+}
+.titre
+{
+    font-size: 30px;
+}
+.infos
+{
+    display: flex;
+}
+.cards
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: "Press Start 2P";
+}
+.card
+{
+    margin-left: 10px;
+    position: relative;
+    width: 500px;
+    height: 470px;
+    background: #2F323D;
+    transition: 0.5s;
+}
+.card .lines
+{
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+.card .lines::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    height: 160px;
+    background: linear-gradient(0deg,transparent,#01F700,transparent);
+    animation: animates 4s linear infinite;
+}
+@keyframes animates
+{
+    0%
+    {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.card .lines::after
+{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #2F323D;
+}
+.card .content
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.card .content .details
+{
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    margin: auto;
+}
+.card .content .details h2
+{
+    font-size: 1.75em;
+    font-weight: 600;
+    color: red;
+    line-height: 1.2em;
+}
+.card .content .details h2 span
+{
+    font-size: 0.75em;
+    font-weight: 500;
+    color: white;
+}
+.card .content .details .data
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.card .content .details .data h3
+{
+    display: flex;
+    font-size: 1.3em;
+    color: white;
+    line-height: 1.8em;
+    font-weight: 400;
+    padding: 0px 0px 0px 60px;
+}
+.card .content .details .data i
+{
+    margin-top: 8px;
+    margin-right: 3px;
+}
+.barre
+{
+    display: flex;
+    border-top: solid 5px;
+    color: red;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card .content .details .data .fa fa-check
+{
+    color: green;
+    background-color: green;
+}
+.card .content .details .actionBtn button
+{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    background: red;
+    color: white;
+    cursor: pointer;
+    opacity: 0.9;
+    font-family: "Press Start 2P";
+}
+.card .content .details .actionBtn button:hover
+{
+    opacity: 1;
+}
+.card-matos
+{
+    position: relative;
+    width: 500px;
+    height: 640px;
+    background: #2F323D;
+    transition: 0.5s;
+    font-family: "Press Start 2P";
+}
+.card-matos .liness
+{
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+.card-matos .liness::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 900px;
+    height: 160px;
+    background: linear-gradient(0deg,transparent,#01F700,transparent);
+    animation: animatess 4s linear infinite;
+}
+@keyframes animatess
+{
+    0%
+    {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.card-matos .liness::after
+{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #2F323D;
+}
+.card-matos .content
+{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.card-matos .content .details
+{
+    position: relative;
+    top: 70px;
+    padding: 0px 70px 0px 70px;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.card-matos .content .details p
+{
+    position: absolute;
+    margin-left: 75px;
+    margin-top: -30px;
+}
+.card-matos .content .details p:hover
+{
+    color: #01F700;
+}
+.card-matos .content .details img
+{
+    display:flex;
+}
+.card-img
+{
+    position: relative;
+    width: 500px;
+    height: 640px;
+    background: #2F323D;
+    transition: 0.5s;
+}
+.card-img .liness-img
+{
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+.card-img .liness-img::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 900px;
+    height: 160px;
+    background: linear-gradient(0deg,transparent,#01F700,transparent);
+    animation: animatessimg 4s linear infinite;
+}
+@keyframes animatessimg
+{
+    0%
+    {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.card-img .liness-img::after
+{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #2F323D;
+}
+.card-img .content-img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.card-img .content-img .details-img
+{
+    position: relative;
+    padding: 3px;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.card-img .content-img .details-img p
+{
+    position: absolute;
+
+}
+.card-img .content-img .details-img img
+{
+    height: 100%;
+    width: 100%;
+}
+.cards-matos
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: "Press Start 2P";
+    margin: 20px 200px 0px;
+}
+.card-horaire
+{
+    position: relative;
+    width: 1200px;
+    height: 640px;
+    background: #2F323D;
+    transition: 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-horaire .liness-horaire
+{
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+.card-horaire .liness-horaire::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1700px;
+    height: 160px;
+    background: linear-gradient(0deg,transparent,#01F700,transparent);
+    animation: animatesshoraire 4s linear infinite;
+}
+@keyframes animatesshoraire
+{
+    0%
+    {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.card-horaire .liness-horaire::after
+{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #2F323D;
+}
+.card-horaire .content-horaire
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.card-horaire .content-horaire .details-horaire
+{
+    position: relative;
+    padding: 3px;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.card-horaire .content-horaire .details-horaire p
+{
+    position: absolute;
+
+}
+.card-horaire .content-horaire .details-horaire img
+{
+    height: 100%;
+    width: 100%;
+}
+@font-face
+{
+    font-family: Revamped;
+    src: url("../font/Revamped.woff");
+}
+@media (max-width: 800px){
+    body
+    {
+        min-height: 100vh;
+    }
+    .searchBtn
+    {
+        left: 0;
+    }
+    .menuToggle
+    {
+        position: absolute;
+        display: block;
+        font-size: 2.5em;
+        cursor: pointer;
+        transform: translateX(0px);
+        z-index: 10;
+        color: white;
+    }
+    header
+    {
+        height: 80px;
+    }
+    header ul li a
+    {
+        color: black;
+    }
+    header .navigation
+    {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        left: 100%;
+    }
+    header.open .navigation
+    {
+        top: 80px;
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: #dee1e2;
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 40px;
+        border-top: 1px solid rgba(0,0,0,0.05);
+    }
+    header.open .navigation li a
+    {
+        font-size: 1.25em;
+    }
+    header img
+    {
+        height: 70px;
+        width: 70px;
+    }
+    header.sticky .menuToggle,
+    header.sticky .search
+    {
+        color: black;
+    }
+    .hide
+    {
+        display: none;
+    }
+    .loader
+    {
+        margin-top: 80px;
+    }
+}
