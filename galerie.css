@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+.loader
+{
+    margin-top: 180px;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+.loader::before
+{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, red, blue, green, yellow,red, blue, green, yellow, red);
+    animation: animate 30s linear infinite;
+    background-size: 500%;
+}
+.loader::after
+{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, red, blue, green, yellow,red, blue, green, yellow, red);
+    animation: animate 30s linear infinite;
+    background-size: 500%;
+    filter: blur(20px);
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    0%
+    {
+        background-position: 500% 0;
+    }
+}
+.titre
+{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.cadre
+{
+    margin-top: 20px;
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    height: 800px;
+    background: #2F323D;
+    transition: 0.5s;
+}
+.cadre .lines
+{
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+.cadre .lines::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1900px;
+    height: 260px;
+    background: linear-gradient(0deg,transparent,#01F700,transparent);
+    animation: animates 8s linear infinite;
+}
+@keyframes animates
+{
+    0%
+    {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.cadre .lines::after
+{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #2F323D;
+}
+@font-face
+{
+    font-family: Revamped;
+    src: url("../font/Revamped.woff");
+}
+@media (max-width: 800px){
+    body
+    {
+        min-height: 100vh;
+    }
+    .searchBtn
+    {
+        left: 0;
+    }
+    .menuToggle
+    {
+        position: absolute;
+        display: block;
+        font-size: 2.5em;
+        cursor: pointer;
+        transform: translateX(0px);
+        z-index: 10;
+        color: white;
+    }
+    header
+    {
+        height: 80px;
+    }
+    header ul li a
+    {
+        color: black;
+    }
+    header .navigation
+    {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        left: 100%;
+    }
+    header.open .navigation
+    {
+        top: 80px;
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: #dee1e2;
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 40px;
+        border-top: 1px solid rgba(0,0,0,0.05);
+    }
+    header.open .navigation li a
+    {
+        font-size: 1.25em;
+    }
+    header img
+    {
+        height: 70px;
+        width: 70px;
+    }
+    header.sticky .menuToggle,
+    header.sticky .search
+    {
+        color: black;
+    }
+    .hide
+    {
+        display: none;
+    }
+    .loader
+    {
+        margin-top: 80px;
+    }
+}

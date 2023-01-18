@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* CSS Document */
+.loader
+{
+    margin-top: 180px;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+.loader::before
+{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, red, blue, green, yellow,red, blue, green, yellow, red);
+    animation: animate 30s linear infinite;
+    background-size: 500%;
+}
+.loader::after
+{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, red, blue, green, yellow,red, blue, green, yellow, red);
+    animation: animate 30s linear infinite;
+    background-size: 500%;
+    filter: blur(20px);
+}
+.card-matos
+{
+    margin-left: 10px;
+    position: relative;
+    width: 450px;
+    height: 640px;
+    background: #2F323D;
+    transition: 0.5s;
+    font-family: "Press Start 2P";
+}
+.card-matos .liness
+{
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+.card-matos .liness::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    height: 160px;
+    background: linear-gradient(0deg,transparent,#01F700,transparent);
+    animation: animatess 4s linear infinite;
+}
+@keyframes animatess
+{
+    0%
+    {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.card-matos .liness::after
+{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #2F323D;
+}
+.card-matos .content
+{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.card-matos .content .details
+{
+    position: relative;
+    top: 70px;
+    padding: 0px 70px 0px 70px;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.card-matos .content .details p
+{
+    position: absolute;
+    margin-left: 75px;
+    margin-top: -30px;
+}
+.card-matos .content .details img
+{
+    display:flex;
+}
+@font-face
+{
+    font-family: Revamped;
+    src: url("../font/Revamped.woff");
+}
+@media (max-width: 800px){
+    body
+    {
+        min-height: 100vh;
+    }
+    .searchBtn
+    {
+        left: 0;
+    }
+    .menuToggle
+    {
+        position: absolute;
+        display: block;
+        font-size: 2.5em;
+        cursor: pointer;
+        transform: translateX(0px);
+        z-index: 10;
+        color: white;
+    }
+    header
+    {
+        height: 80px;
+    }
+    header ul li a
+    {
+        color: black;
+    }
+    header .navigation
+    {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        left: 100%;
+    }
+    header.open .navigation
+    {
+        top: 80px;
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: #dee1e2;
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 40px;
+        border-top: 1px solid rgba(0,0,0,0.05);
+    }
+    header.open .navigation li a
+    {
+        font-size: 1.25em;
+    }
+    header img
+    {
+        height: 70px;
+        width: 70px;
+    }
+    header.sticky .menuToggle,
+    header.sticky .search
+    {
+        color: black;
+    }
+    .hide
+    {
+        display: none;
+    }
+    .loader
+    {
+        margin-top: 80px;
+    }
+}
