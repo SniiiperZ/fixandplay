@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Home</title>
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=revamped">
+</head>
+<body>
+<header>
+    <a href="index.html" class="logo"><img src="images/test1.png" alt=""></a>
+    <div class="group">
+     <ul class="navigation">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="apropos.html">A propos</a></li>
+        <li><a href="infos.html">Infos</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="se-connecter.html">Se connecter</a></li>
+     </ul>
+     <!--<div class="search">
+        <span class="icon-search">
+            <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+            <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+         </span>
+        </div>-->
+      <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+    </div>
+    <!--<div class="searchBox">
+     <input type="text" placeholder="Rechercher...">
+    </div>-->
+</header>
+    <section class="banner"></section>
+<main>
+    <div class="loader"><h1 class="title" align="center"></h1></div>
+    <div class="titre"><h1 align="center">FAQ</h1></div>
+ <div class="container">
+  <div class="tab">
+      <input type="radio" name="acc" id="acc1">
+      <label for="acc1">
+          <h2>01</h2>
+          <h3>Quels sont les tarifs pour utiliser les ordinateurs et acceder a Internet ?</h3>
+      </label>
+      <div class="content"><p>Nos tarifs sont disponible <a href="infos.html" style="text-decoration: none">ici</a></p></div>
+  </div>
+  <div class="tab">
+      <input type="radio" name="acc" id="acc2">
+      <label for="acc2">
+          <h2>02</h2>
+          <h3>Quels sont les horaires d'ouverture du cybercafe ?</h3>
+      </label>
+      <div class="content"><p>Nos horaires sont disponible <a href="infos.html">ici</a></p></div>
+  </div>
+  <div class="tab">
+      <input type="radio" name="acc" id="acc3">
+      <label for="acc3">
+          <h2>03</h2>
+          <h3>Y a-t-il des offres speciales ou des tarifs reduits pour les etudiants ou les seniors ?</h3>
+      </label>
+      <div class="content"><p>Oui, nos offres sont disponible <a href="infos.html">ici</a></p></div>
+  </div>
+  <div class="tab">
+      <input type="radio" name="acc" id="acc4">
+      <label for="acc4">
+          <h2>04</h2>
+          <h3>Est-ce que vous offrez des imprimantes et des scanners a disposition des clients ?</h3>
+      </label>
+      <div class="content"><p>Non</p></div>
+  </div>
+  <div class="tab">
+      <input type="radio" name="acc" id="acc5">
+      <label for="acc5">
+          <h2>05</h2>
+          <h3>Est-ce que les clients peuvent-ils installer leurs propres logiciels ?</h3>
+      </label>
+      <div class="content"><p>Oui, tous les logiciels installes seront au prealable supprimer</p></div>
+  </div>
+  <div class="tab">
+      <input type="radio" name="acc" id="acc6">
+      <label for="acc6">
+          <h2>06</h2>
+          <h3>Est-ce que vous offrez des boissons et des collations a la vente ?</h3>
+      </label>
+      <div class="content"><p>Oui, nous avons des distributeurs a votre disposition</p></div>
+  </div>
+  <div class="tab">
+      <input type="radio" name="acc" id="acc7">
+      <label for="acc7">
+          <h2>07</h2>
+          <h3>Avez-vous des ecrans de protection contre les rayons UV et les lumieres bleues ?</h3>
+      </label>
+      <div class="content"><p>Non</p></div>
+  </div>
+  <div class="tab">
+      <input type="radio" name="acc" id="acc8">
+      <label for="acc8">
+          <h2>08</h2>
+          <h3>Avez-vous une politique de confidentialite pour proteger les donnees des clients ?</h3>
+      </label>
+      <div class="content"><p>Oui, toutes donnees indroduite est proteger et securiser</p></div>
+  </div>
+  <div class="tab">
+      <input type="radio" name="acc" id="acc9">
+      <label for="acc9">
+          <h2>09</h2>
+          <h3>Offrez-vous des services de depannage informatique ou de reparation de materiel ?</h3>
+      </label>
+      <div class="content"><p>Oui</p></div>
+  </div>
+  <div class="tab">
+      <input type="radio" name="acc" id="acc10">
+      <label for="acc10">
+          <h2>10</h2>
+          <h3>Est-ce que vous offrez des imprimantes et des scanners a disposition des clients ?</h3>
+      </label>
+      <div class="content"><p>Non</p></div>
+  </div>
+ </div>
+</main>
+<footer>
+    <div class="footer">
+        <div>
+            <p align="center">Copyright 2022 - Fix and Play</p>
+        </div>
+    </div>
+</footer>
+    <script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+    </script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="java/projet.js"></script>
+</body>
+</html>
